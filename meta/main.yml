@@ -1,0 +1,34 @@
+galaxy_info:
+  author: Marcos H. Alano
+  description: Role for install Microsoft Visual Studio Code IDE
+
+  license: MIT
+
+  min_ansible_version: 2.1
+
+  platforms:
+  - name: EL
+    versions:
+    - all
+  - name: Fedora
+    versions:
+    - all
+  - name: opensuse
+    versions:
+    - all
+  - name: Ubuntu
+    versions:
+    - all
+  - name: SLES
+    versions:
+    - all
+  - name: Debian
+    versions:
+    - all
+
+  galaxy_tags:
+    - Code
+    - desktop
+    - editor
+    - ide
+    - microsoft
