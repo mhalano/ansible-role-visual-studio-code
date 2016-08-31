@@ -19,9 +19,23 @@
 - name: download and install visual studio code
   yum:
     name: https://go.microsoft.com/fwlink/?LinkID=760681
-  when: ansible_userspace_architecture == 'x86_64' and (ansible_distribution == 'CentOS' or ansible_distribution == 'EL' or ansible_distribution == 'Fedora' or ansible_distribution == 'opensuse' or ansible_distribution == 'RedHat' or ansible_distribution == 'SLES')
+  when: >
+    ansible_userspace_architecture == 'x86_64' and
+    (ansible_distribution == 'CentOS' or
+    ansible_distribution == 'EL' or
+    ansible_distribution == 'Fedora' or
+    ansible_distribution == 'opensuse' or
+    ansible_distribution == 'RedHat' or
+    ansible_distribution == 'SLES')
 
 - name: download and install visual studio code
   yum:
     name: https://go.microsoft.com/fwlink/?LinkID=760867
-  when: ansible_userspace_architecture == 'x86_64' and (ansible_distribution == 'CentOS' or ansible_distribution == 'EL' or ansible_distribution == 'Fedora' or ansible_distribution == 'opensuse' or ansible_distribution == 'RedHat' or ansible_distribution == 'SLES')
+  when: >
+    ansible_userspace_architecture == 'x86_64' and
+    (ansible_distribution == 'CentOS' or
+    ansible_distribution == 'EL' or
+    ansible_distribution == 'Fedora' or
+    ansible_distribution == 'opensuse' or
+    ansible_distribution == 'RedHat' or
+    ansible_distribution == 'SLES')
