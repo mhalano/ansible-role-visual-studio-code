@@ -1,7 +1,7 @@
 visual-studio-code
 ==================
 
-This role download and install Microsoft Visual Studio Code in the latest available version. I wrote this role to be compatible with all systems based on DEB and RPM, but I just tested on Ubuntu. Please, report the bugs.
+This role download and install Microsoft Visual Studio Code in the latest available version. I wrote this role to be compatible with all systems based on DEB and RPM, but I just tested on Ubuntu. Please, report bugs.
 
 Requirements
 ------------
@@ -27,6 +27,7 @@ Including an example of how to use your role (for instance, with variables passe
       roles:
          - visual-studio-code
 
+
 License
 -------
 
@@ -37,11 +38,14 @@ Author Information
 
 My name is Marcos H. Alano. This is my first role published on Ansible Galaxy. I wrote a lots of roles and I will porting one by one. Is all roles related to desktop applications (may be a few server applications in the future) because my plan is automatize the post-installation of my computer.
 
-
-TODO
-----
+To Do
+-----
 
 * Support macOS
-* Do tests on RPM-based platforms
-* Do tests on Debian
+* Do tests on RPM-based distributions
+* Do tests on Debian distribution
 * Support GenericLinux (use the .zip instead of a package)
+
+Known Bugs
+----------
+* Sometimes the playbook fails because it has problems downloading the package. That's a Microsoft problem related with the shorten links.
